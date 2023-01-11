@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #490b09f6;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+header{
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    left: 35vw;
+    top: 2px;
+    z-index: -1;
+    width: 50px;
+}
+
+header h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    padding: 20px 0px;
+    color: rgb(251, 253, 145);
+    cursor:default;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(251, 253, 145);
+    list-style: none;
+}
+
+ul li{
+    padding: 8px 30px;
+}
+
+li:hover{
+    background-color: white;
+}
+
+li:active{
+    background-color: rgb(205, 236, 247);
+}
+
+section{
+    width: 70%;
+    margin: 15px auto;
+    padding: 10px 15px;
+    background-color: rgb(251, 253, 145);
+}
+
+article p{
+    padding: 8px 0;
+}
+
+footer{
+    padding: 5px 0;
+    background-color: rgb(251, 253, 145);
+}
+
+.menu{
+    width: 50%;
+    padding: 5px 10px;
+    background-color: rgb(141, 67, 45);
+    border: 2px solid rgb(251, 253, 145);
+    color: white;
+}
+
+.menu h1{
+    padding-bottom: 5px;
+    color: rgb(251, 253, 145);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 1px black
+}
+
+.menu h2{
+    padding-top: 5px;
+    border-top: 3px dashed #5e0000f6;
+    color: rgb(251, 253, 145);
+    text-shadow: 2px 2px black;
+}
+
+.menu p{
+    display: inline-block;
+    font-size: 18px;
+    text-shadow: 1px 1px black;
+}
+
+.menu p:nth-of-type(odd){
+    text-align: left;
+    width: 75%;
+}
+.menu p:nth-of-type(even){
+    text-align: right;
+    width: 24%;
+}
+
+.center{
+    text-align: center;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+@media (max-width: 500px)
+{
+    section{
+        width: 90%;
+    }
+
+    .menu{
+        width: 90%;
+    }
+
+    .menu p:nth-of-type(odd){
+        width: 74%;
+    }
+}
+
+@media (max-width: 1210px)
+{
+    .logo{
+        display: none;
+    }
+}
